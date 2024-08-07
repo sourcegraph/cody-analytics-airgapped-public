@@ -18,11 +18,11 @@ SELECT
       ELSE NULL
   END) AS distinct_chat_users,
   COUNT(DISTINCT CASE
-      WHEN (name = 'cody.completion:accepted') AND ((public_argument->>'metadata'->>'otherCompletionProvider')::int <> 1 OR public_argument->>'metadata'->>'otherCompletionProvider' IS NULL) THEN user_id
+      WHEN (name = 'cody.completion:accepted') AND ((public_argument->'metadata'->>'otherCompletionProvider')::int <> 1 OR public_argument->'metadata'->>'otherCompletionProvider' IS NULL) THEN user_id
       ELSE NULL
   END) AS completion_accepted_users,
   COUNT(CASE
-      WHEN (name = 'cody.completion:accepted') AND ((public_argument->>'metadata'->>'otherCompletionProvider')::int <> 1 OR public_argument->>'metadata'->>'otherCompletionProvider' IS NULL) THEN 1
+      WHEN (name = 'cody.completion:accepted') AND ((public_argument->'metadata'->>'otherCompletionProvider')::int <> 1 OR public_argument->'metadata'->>'otherCompletionProvider' IS NULL) THEN 1
       ELSE NULL
   END) AS completion_accepted_events
 FROM
