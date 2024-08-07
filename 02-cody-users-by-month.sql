@@ -1,3 +1,6 @@
+-- Cody users, by month
+-- Current month is shown as partial month, month-to-date, so numbers may be lower than expected for current month
+-- Previous 3 months are shown as whole calendar months
 SELECT
     TO_CHAR(timestamp, 'YYYY-MM') AS timestamp_month,
     COUNT(DISTINCT user_id) AS distinct_users

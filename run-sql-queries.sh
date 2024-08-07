@@ -13,6 +13,8 @@ cody_events_list_file_insert_marker="--cody-events-list-gets-inserted-here"
 ## Script start
 echo "Starting $0"
 
+pgsql_pod_name=$(kubectl get pod -l app=pgsql -o jsonpath="{.items[0].metadata.name}")
+
 # Create / clear output file
 > "$output_file"
 
@@ -35,17 +37,17 @@ do
     query="${query_file_content/$cody_events_list_file_insert_marker/$cody_events_list_content}"
 
     # Execute the psql command, inside a kubectl exec command, using the $query_file_content variable as the query
-    echo "$(kubectl exec \
-        -it         \
-        pgsql-0     \
-        --          \
-        psql        \
-        -U sg       \
+    echo "$(kubectl exec    \
+        -it                 \
+        $pgsql_pod_name     \
+        --                  \
+        psql                \
+        -U sg               \
 << EOF
 $query
 EOF
         )
-        " \
+        "                   \
         >> "$output_file"
 
 done
