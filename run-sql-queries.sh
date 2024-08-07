@@ -38,7 +38,7 @@ do
 
     # Execute the psql command, inside a kubectl exec command, using the $query_file_content variable as the query
     echo "$(kubectl exec    \
-        -it                 \
+        -i                  \
         $pgsql_pod_name     \
         --                  \
         psql                \
