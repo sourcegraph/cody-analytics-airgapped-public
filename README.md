@@ -22,17 +22,17 @@ This script can be used in either of two modes.
 
 3. Find your output in the [run-sql-queries.sh-output.txt](run-sql-queries.sh-output.txt) file
 
-## Editing Queries
-
-1. Store SQL queries as individual `.sql` files in the root directory of this repo
-2. Include the line `--cody-events-list-gets-inserted-here` if / where you'd like the contents of the [cody-events-list](./cody-events-list) file to get inserted
-3. Name the files in the order you'd like them run; these file names will be included in the [run-sql-queries.sh-output.txt](run-sql-queries.sh-output.txt) file
-
 ## Updating the List of Cody Telemetry Event Names
 
 1. Open [this](https://redash.sgdev.org/queries/929/source) query
 2. Download the results as a TSV file
 3. Replace the contents of the [cody-events-list](./cody-events-list) file with the contents of the results TSV file
+
+## Editing Queries
+
+1. Store SQL queries as individual `.sql` files in the root directory of this repo
+2. Include the line `--cody-events-list-gets-inserted-here` if / where you'd like the contents of the [cody-events-list](./cody-events-list) file to get inserted
+3. Name the files in the order you'd like them run; these file names will be included in the [run-sql-queries.sh-output.txt](run-sql-queries.sh-output.txt) file
 
 ## Context
 
