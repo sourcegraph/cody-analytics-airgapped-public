@@ -24,9 +24,10 @@ This script can be used in either of two modes.
 
 ## Updating the List of Cody Telemetry Event Names
 
-1. Open [this](https://redash.sgdev.org/queries/929/source) query
-2. Download the results as a TSV file
-3. Replace the contents of the [cody-events-list](./cody-events-list) file with the contents of the results TSV file
+1. Copy the contents from either:
+    1. [This Google Sheet](https://docs.google.com/spreadsheets/d/1Hef4yQxSlelKINs3Jo9TyF4BMWwa7XETP-iPUsriibA/edit?gid=971556367#gid=971556367)
+    2. [This Redash Query](https://redash.sgdev.org/queries/929/source), download as a TSV
+2. Replace the contents of the [cody-events-list](./cody-events-list) file
 
 ## Editing Queries
 
