@@ -23,9 +23,6 @@ The script will send commands to the kubectl CLI on your computer
 
 The script will send commands to the psql CLI on your computer
 
-If needed, see the Sourcegraph Docs page on [how to connect to your Sourcegraph database](https://sourcegraph.com/docs/admin/deploy/kubernetes/operations#access-the-database)
-
-
 1. Clone this repo to your computer with the psql CLI client installed
 2. Pull the latest commits to main
 3. Run the [run-sql-queries.sh](./run-sql-queries.sh) script, with the following args:
@@ -74,3 +71,4 @@ WHERE
 
 1. [Google doc](https://docs.google.com/document/d/1wHYHhr2BmgOPDl6tCO3fiiLyV_WOQQ-nL8IomxcP1FM/edit)
 2. [Slack channel](https://sourcegraph.slack.com/archives/C07EZ2W4U9H)
+3. Sourcegraph Docs page on [how to connect to your Sourcegraph database](https://sourcegraph.com/docs/admin/deploy/kubernetes/operations#access-the-database)
