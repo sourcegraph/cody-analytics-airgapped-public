@@ -17,7 +17,7 @@ The script will send commands to the kubectl CLI on your computer
 
 `./run-sql-queries.sh`
 
-4. Find the query output in the `./run-sql-queries.sh-output.txt` file
+5. Find the query output in the `./run-sql-queries.sh-output.txt` file
 
 ### Mode 2: You have direct psql access to your database
 
