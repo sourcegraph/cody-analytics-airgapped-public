@@ -44,7 +44,7 @@ This process will be eliminated once [RFC 978](https://docs.google.com/document/
 
 ## Editing Queries
 
-1. Store SQL queries as individual `.sql` files in the root directory of this repo
+1. Store SQL queries as individual `.sql` files in the [./queries](./queries) directory of this repo
 2. Include the line `--cody-events-list-gets-inserted-here` if / where you'd like the contents of the [cody-events-list](./cody-events-list) file to get inserted, ex:
 
 ```sql

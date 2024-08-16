@@ -2,7 +2,7 @@
 
 
 # File paths
-sql_queries_directory="$(pwd)"
+sql_queries_directory="$(pwd)/queries"
 output_file="$0-output.txt"
 cody_events_list_file="cody-events-list"
 
