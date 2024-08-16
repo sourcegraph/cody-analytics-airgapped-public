@@ -254,4 +254,4 @@ eventName
 'completion.suggested',
 'repo.askCody.click',
 'repo.cody.configuration.view',
-'repo.cody.configurationPolicy.view',
+'repo.cody.configurationPolicy.view'
