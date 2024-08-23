@@ -1,6 +1,6 @@
 # cody-analytics-airgapped-public
 
-Use this repo to share SQL queries with customers who have telemetry disabled, but still need to get Cody usage analytics
+> NOTE: This repo is used by the Sourcegraph Professional Services team to share SQL queries with customers who have telemetry disabled, but need Cody usage analytics. Please post in #discuss-professional-services. 
 
 ## Running the Queries (Sourcegraph Customer)
 
