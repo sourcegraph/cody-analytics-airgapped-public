@@ -33,7 +33,9 @@ The script will send commands to the psql CLI on your computer
 
 ## Updating the List of Cody Telemetry Event Names (Sourcegraph Staff)
 
-This process will be eliminated once [RFC 978](https://docs.google.com/document/d/1EvyH1kaU-fsn59h-DyoaO2Qy4C2TYLmDGjG73bdb2V4/edit#heading=h.trqab8y0kufp) is implemented, as the SQL query to pull the correct event types will be succinct and added in the `.sql` files, or once we find a way to automate this.
+> This process will be eliminated once either:
+> - [RFC 978](https://docs.google.com/document/d/1EvyH1kaU-fsn59h-DyoaO2Qy4C2TYLmDGjG73bdb2V4/edit#heading=h.trqab8y0kufp) is implemented, as the SQL query to pull the correct event types will be merged into the queries at runtime, or 
+> - We find a way to automate updating this file in the repo (ex. GitHub action with BigQuery)
 
 1. Copy the contents from either (both should automatically update themselves every 24 hours):
     1. [This Google Sheet](https://docs.google.com/spreadsheets/d/1Hef4yQxSlelKINs3Jo9TyF4BMWwa7XETP-iPUsriibA/edit?gid=971556367#gid=971556367)
